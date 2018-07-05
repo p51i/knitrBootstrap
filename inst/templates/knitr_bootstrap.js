@@ -75,7 +75,7 @@ $(function() {
   var output_types = ['output', 'message', 'warning', 'error']
 
   /* style tables */
-  $('table').addClass('table table-striped table-bordered table-hover table-condensed');
+  $('table').addClass('table table-striped table-bordered table-hover table-sm');
 
   $('pre code').each(function(i, e) {
     hljs.highlightBlock(e);
@@ -162,7 +162,7 @@ $(function() {
   });
   /* table of contents */
   if($(['h1', 'h2', 'h3', 'h4'].join(',')).length > 0){
-    $('body > #wrap > .container > .row').append('<div class="col-md-2"><div id="toc" class="well sidebar sidenav affix hidden-print"/></div>');
+    $('body > #wrap > .container > .row').append('<div class="col-md-2"><div id="toc" class="card sidebar sidenav affix hidden-print"/></div>');
     $('#toc').generate_TOC();
   }
 

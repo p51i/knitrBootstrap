@@ -284,11 +284,11 @@ m = function(data, pattern){
   process_matches(regexpr(pattern=pattern, data, perl=T), data)
 }
 
-panel_types = c('source' = 'panel-primary',
-                 'output' = 'panel-success',
-                 'message' = 'panel-info',
-                 'warning' = 'panel-warning',
-                 'error' = 'panel-danger')
+panel_types = c('source' = 'card text-white bg-primary',
+                 'output' = 'card text-white bg-success',
+                 'message' = 'card text-white bg-info',
+                 'warning' = 'card text-white bg-warning',
+                 'error' = 'card text-white bg-danger')
 
 button_types = c('source' = 'btn-primary',
                  'output' = 'btn-success',
